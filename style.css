@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background: #ECE9E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ min-height: 100vh;
+}
+.mobile-container{
+    width:400px;
+    background-color: white;
+  border-radius: 3px;
+  overflow: hidden;
+    box-shadow: 0 0 10px 2px #3333331A;
+
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+header input{
+  background-color: rgb(250, 243, 243);
+    border-radius: 3px;
+    font-family: inherit;
+    border: none;
+    padding: 0.5rem 1rem;
+} 
+header button{
+     background-color: transparent;
+     border: none;
+     font-size: 1.5rem;
+     margin-left: 10px;
+}
+.fav-container{
+    background-color:rgb(238,238,238);
+    text-align: center;
+    padding: 0.5rem 1rem;
+
+}
+.fav-meals{
+    display: flex;
+    overflow: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+.fav-meals li{
+    margin: 5px;
+    width:75px;
+}
+.fav-meals li img{
+    border:2px solid #ffffff;
+    border-radius: 50%;
+    box-shadow:0 0 10px 2px #3333331A;
+    object-fit: cover;
+    height:70px;
+    width: 70px;
+}
+img{
+    max-width: 100%;
+    
+}
+.fav-meals li span{
+    font-size:0.9rem
+}
+.meal{
+border-radius: 3px;
+box-shadow:0 0 10px 2px #3333331A;
+border-radius: 3px;
+margin: 1.5rem;
+overflow: hidden;
+
+}
+.meal-header{
+    position: relative;
+
+}
+.meal-header .random{
+    position:absolute;
+    top: 1rem;
+    background-color: #fff;
+    padding: 0.3 5rem 1rem ;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+}
+.meal-header img{
+    object-fit: cover;
+height: 250px;
+width: 100%;
+}
+.meal-body{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 1rem;;
+}
+.meal-body h4{
+    margin: 0;
+}
+.meal-body .fav-btn{
+    border: none;
+    color: rgb(202, 198, 198);
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 1.2rem ;
+} 
+.meal-body .fav-btn.active{
+    color:red
+}
